@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<configuration name="StackExchange" packages="" scan="true" debug="false">
+	<property name="log-path" value="c:/Tomcat 8.5/logs/StackExchange/" />
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">		
+		<encoder>
+			<Pattern>%d [%thread] %level %logger - %m%n</Pattern>
+		</encoder>		
+	</appender>    			
+	<appender name="servlet" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${log-path}/servlet.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log-path}/servlet.log-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<charset>CP1251</charset>	
+			<pattern>%d{ISO8601} [%thread] [%class{0}] [%-5p] %m%n</pattern>
+		</encoder>
+	</appender>
+        <appender name="stackexchange" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${log-path}/stackexchange.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log-path}/stackexchange.log-%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<charset>CP1251</charset>	
+			<pattern>%d{ISO8601} [%thread] [%-5p] %m%n</pattern>
+		</encoder>
+	</appender>
+         
+	<logger name="ru.inp.stackexchange.web" level="trace" additivity="false">
+		<appender-ref ref="servlet" />
+	</logger>	            
+	<logger name="ru.inp.stackexchange.api" level="trace" additivity="false">
+		<appender-ref ref="stackexchange" />
+	</logger>		
+	<root level="debug">
+		<appender-ref ref="CONSOLE" />
+	</root>
+</configuration>

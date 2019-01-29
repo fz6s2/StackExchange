@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/JavaProject/StackExchange/src/java/ru/inp/stackexchange/api/SERequest.java</file>
+            <file>file:/C:/JavaProject/StackExchange/src/java/ru/inp/stackexchange/format/JSONParser.java</file>
+            <file>file:/C:/JavaProject/StackExchange/web/WEB-INF/jsp/form_search.jsp</file>
+            <file>file:/C:/JavaProject/StackExchange/src/java/ru/inp/stackexchange/resources/config.properties</file>
+            <file>file:/C:/JavaProject/StackExchange/src/java/ru/inp/stackexchange/api/SEGatewayClientFactory.java</file>
+            <file>file:/C:/JavaProject/StackExchange/src/java/ru/inp/stackexchange/AppConfig.java</file>
+            <file>file:/C:/JavaProject/StackExchange/src/java/ru/inp/stackexchange/web/ActionSearch.java</file>
+            <file>file:/C:/JavaProject/StackExchange/src/java/ru/inp/stackexchange/api/SEGatewayClient.java</file>
+            <file>file:/C:/JavaProject/StackExchange/src/java/ru/inp/stackexchange/format/JSONUnixTimeDeserializer.java</file>
+        </group>
+    </open-files>
+</project-private>
